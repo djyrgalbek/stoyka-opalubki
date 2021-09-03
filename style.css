@@ -1,0 +1,709 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    cursor: default;
+    transition: 0.3s;
+}
+#body_backg{
+    width: 100%;
+    height: auto;
+    background-image: url(images/textur_b.png);
+    background-repeat: repeat;
+}
+header
+{
+    position: sticky;
+    top: 0px;
+    width: auto;
+    background: #262626;
+    border-bottom: 1px solid #ffde00;
+    z-index: 2;
+    white-space: nowrap;
+    overflow-x: auto;
+	overflow-y: hidden
+}
+
+menu
+{
+    list-style-type: none;
+}
+menu li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 17.5px 0px;
+    margin-left: 20px;
+    font: normal 15px 'Oswald', 'Pathway Gothic One', 'Fjalla One', sans-serif;
+    color: #b2b6b1;
+}
+menu li:hover{
+    color: #dcdcdc;
+}
+.hidden_by_tovar{
+    display: none;
+    color: #e39214;
+    margin-right: 25px;
+}
+.hidden_by_tovar:hover{
+    color: #ffa00c;
+}
+#by_tovar{
+    float: right;
+    margin-top: 11.5px;
+    margin-right: 20px;
+    padding: 5px 10px;
+    color: #e39214;
+    border:1px dashed #e39214;
+}
+#by_tovar:hover{
+    color: #ffa00c;
+    border-color: #ffa00c;
+}
+#background{
+    width: auto;
+    height: 450px;
+    background-image: url(images/background_2.jpg);
+    background-position: 0% 45%;
+    background-color: darkgray;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+#background_block_1{
+    position: relative;
+    top: 70px;
+    left: 30px;
+    width: 400px;
+    height: auto;
+    padding: 18px 30px;
+    background: rgba(0,0,0,0.5);  
+    text-align: left;
+}
+#background_block_1 h1{
+    font: normal 34px 'Fjalla One', 'Pathway Gothic One', 'Oswald', sans-serif;
+    color: white;
+}
+#background_block_1 ul{
+    font: normal 20px 'Fjalla One', 'Pathway Gothic One', 'Oswald', sans-serif;
+    color: #ffde00;
+    margin-left: 40px;
+}
+#menu_section{
+    width: auto;
+    height: auto;
+    padding: 0px 30px;
+    background: #101010;
+    z-index: 0;
+    -o-box-shadow: 0px -10px 70px #737373;
+    -moz-box-shadow: 0px -10px 70px #737373;
+    -khtml-box-shadow: 0px -10px 70px #737373;
+    box-shadow: 0px -10px 70px #737373;
+    white-space: nowrap;
+    overflow-x: auto;
+	overflow-y: hidden
+}
+#menu_section div{
+    font-size: 15px;
+    font-family: 'Amaranth', sans-serif;
+    color: white;
+}
+#menu_section div:hover{
+    opacity: 0.5; 
+}
+#main,#we_offer{
+    width: auto;
+    padding: 30px;
+}
+#main h1{
+    font: normal 40px 'PT sans narrow', 'Fjalla One', 'Pathway Gothic One', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#main p{
+    text-align: left;  
+    font: normal 17px 'PT sans narrow', 'Fjalla One', 'Pathway Gothic One', sans-serif;
+    color: whitesmoke;
+}
+#we_offer h1{
+    font: normal 40px 'PT sans narrow', 'Fjalla One', 'Pathway Gothic One', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 14px;
+}
+#we_offer ul{
+    display: inline-block;
+    margin-left: -2px;
+    width: 100%;
+    position: relative;
+    top: 10px;
+    left: 0px;
+    list-style-type: none;
+}
+#we_offer ul li{
+    display: inline-block;
+    width: calc(20% - 34px);
+    padding: 15px;
+    min-height: 170px;
+    text-align: center;
+    float: left;
+    margin-left: 4px;
+    color: #e5b50d;
+    font: normal 14px Verdana, Tahoma, Arial sans-serif;
+}
+#about_us_and_garant{
+    width: 100%;
+    height:auto;  
+    margin-top: 30px;
+    float: left;
+}
+#about_us_and_garant div{
+    width: calc(50% - 61px);
+    padding: 30px;
+    min-height: 400px;
+    background: #212e3a;
+    float: left;
+    border-right: 1px solid #2c2c2c;
+/*
+    background: url(images/background_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+*/ 
+    box-shadow: 5px 0px 50px #000;
+}
+#about_us_and_garant div h1{
+    text-align: left;
+    font: bold 27px 'Pathway Gothic One', Arial, Helvetika, sans-serif;
+    color: #fff;
+    margin-bottom: 6px;
+}
+#about_us_and_garant div p{
+    margin-top: 14px;
+    font: normal 16px 'Pathway Gothic One', Arial, Helvetika, sans-serif;
+    color: #fff;
+}
+#about_us_and_garant .garant {
+    border: none;
+    width:calc(50% - 60px);
+    background: #5cb863;
+    -o-box-shadow: -5px 0px 50px #000;
+    -moz-box-shadow: -5px 0px 50px #000;
+    -khtml-box-shadow: -5px 0px 50px #000;
+    box-shadow: -5px 0px 50px #000;
+}
+#about_us_and_garant .garant h1{
+    color: #fff;
+}
+#catalog{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: white;
+    text-align: center;
+    -o-box-shadow: 0px -10px 100px #000;
+    -moz-box-shadow: 0px -10px 100px #000;
+    -khtml-box-shadow: 0px -10px 100px #000;
+    box-shadow: 0px -10px 100px #000;
+}
+#catalog h1{
+    font: bold 35px 'PT sans narrow', 'Fjalla One', 'Pathway Gothic One', sans-serif;
+    color: black;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#catalog p{
+    margin-left: 30px;
+    font: normal 18px 'PT sans narrow', 'Fjalla One', 'Pathway Gothic One', sans-serif;
+    color: #191919;
+}
+#catalog ul{
+    margin-top: 20px;
+    margin-left: -10px;
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+#catalog ul li{
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #9c9c9c;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 10px;
+    word-wrap:break-word;
+}
+#catalog ul li:hover{
+    border: 1px solid #e39214;
+    -o-box-shadow: 0px 5px 15px #e39214;
+    -moz-box-shadow: 0px 5px 15px #e39214;
+    -khtml-box-shadow: 0px 5px 15px #e39214;
+    box-shadow: 0px 5px 15px #e39214;
+}
+.box_pic{
+    overflow: hidden;
+    width:calc(100% + 20px);
+    height:250px;
+    background: #d7d7d7;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+.price{
+    position: relative;
+    width:calc(100% - 40px);
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 20px;
+    font-style: oblique;
+    font-family: serif;
+    color:aliceblue;
+    margin-top: -44px;
+    margin-left: -10px;
+    background: rgba(234,17,17,0.5);
+}
+#catalog ul li legend{
+    margin-top: 10px;
+    font: italic 14px  sans-serif;
+    color: black;
+}
+#img{
+    width: auto;
+    height: 100%;
+}    
+#shipping_and_payment{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    background: black;
+    box-shadow: 0px 10px 25px #000;
+}
+#shipping_and_payment ul{
+    list-style-type: none;
+    height: auto;
+}
+#shipping_and_payment ul li:nth-child(1){
+    display: inline-block;
+    width: calc(33.33% - 60px);
+    min-height: 500px;
+    padding: 30px;
+    background-image: url(images/background_7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float: left;
+}
+#shipping_and_payment ul li h1{
+    color: aliceblue;
+    font: normal 27px 'PT sans narrow', 'Fjalla One', 'Pathway Gothic One', sans-serif;
+    text-align: left;
+    margin-top: 15px;
+}
+#shipping_and_payment ul li h2{
+    color: #e6dbb0;
+    font: normal 24px 'PT sans narrow', 'Fjalla One', 'Pathway Gothic One', sans-serif;
+    text-align: left;
+}
+#shipping_and_payment ul li p{
+    color: aliceblue;
+    font: normal 19px 'PT sans narrow', 'Fjalla One', 'Pathway Gothic One', sans-serif;
+    text-align: left;
+}
+#shipping_and_payment ul li:nth-child(2){
+    display: inline-block;
+    width: calc(33.33% - 60px);
+    min-height: 500px;
+    padding: 30px;
+    background-image: url(images/textur_z.png);
+    background-repeat: repeat;
+    float: left;
+}
+#shipping_and_payment ul li legend{
+    color: #d8d8d8;
+    font: normal 17px 'PT sans narrow', 'Fjalla One', 'Pathway Gothic One', sans-serif;
+    margin-bottom: 3px;
+}
+#shipping_and_payment ul li input{
+    width: calc(100% - 2px);
+    padding: 7px;
+    font: normal 14px sans-serif;
+    margin-bottom: 14px;
+    border: 1px solid #dfdfdf;
+}
+.submit{
+    text-align: center;
+    padding: 7px;
+    font: normal 17px 'PT sans narrow', 'Fjalla One', 'Pathway Gothic One', sans-serif;
+    color: white;
+    background: #0987b9;
+    border:1px solid #066c95;
+}
+.submit:hover{
+    color: #dfdfdf;
+    background: #066c95;
+}
+
+#shipping_and_payment ul li:nth-child(3){
+    display: inline-block;
+    width: calc(33.33% - 60px);
+    min-height: 500px;
+    padding: 30px;
+    background-image: url(images/background_8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+float: left;
+}
+.img_by_product{
+    width: 70px;
+    height: auto;
+    display: inline-block;
+    float: left; 
+    margin-right: 15px;
+}
+.by_product_box{
+    display: table;
+    width: calc(100% - 20px);
+    background:  rgba(0,0,0,0.5);
+    margin-top: 10px;
+    padding: 10px;
+}
+.by_product_box p{
+    display: table-cell;
+    vertical-align: middle;
+    font: normal 12px 'PT sans narrow', 'Fjalla One', 'Pathway Gothic One', sans-serif;
+}
+.map{
+    display: inline-block;
+	width:100%;
+	height:auto;
+	text-align:center;
+	background: white;
+	padding:37px 0px;
+}
+.map h1{
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size:22px;
+	color:#000;
+    margin-left: 7.5%;
+}
+.map p{
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size:19px;
+	color:#000;
+	margin-bottom:30px;
+    margin-left: 7.5%;
+}
+.map iframe{
+	width:85%;
+	height:500px;
+}
+footer{
+	display:inline-block;
+	width:calc(100% - 40px);
+	height:auto;
+	padding:30px 20px;
+	background-repeat: repeat;
+	background: #000;
+}
+footer div{
+	display:inline-block;
+	width:33.3%;
+	height:auto;
+	text-align:center;
+	float:left;
+}
+footer div p{
+	color:#e9e9e9;
+	margin-top: 3px;
+	text-align: center;
+	font: normal 15px 'PT Sans Narrow', Arial, Helvetika, sans-serif;
+}
+footer div p a{
+	color:#fff;
+	text-decoration:none;
+    
+}
+footer div p a:hover{
+    color:#8d8d8d;
+}
+
+@keyframes swing {
+  15% {
+    transform: translateX(5px);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  65% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#we_offer ul li:hover,#catalog ul li:hover {
+  animation: swing 1.5s ease;
+  animation-iteration-count: 1;
+}
+
+
+
+
+
+@media screen and (max-width: 740px) {
+   #we_offer ul li{
+       width: calc(100% - 30px);
+       margin-left: 2px; 
+    }
+    #main,#we_offer{
+    padding: 20px;
+    }
+    #main h1, #we_offer h1{
+        font-size: 27px;
+    }
+    #by_tovar{
+        display: none;
+    }
+    .hidden_by_tovar{
+    display: inline;
+    }
+    #menu_section{
+    padding: 0;
+    }
+    #menu_section p span{
+    display: none;
+    }
+    #about_us_and_garant div, #about_us_and_garant .garant{
+    width: calc(100% - 40px);
+    border-right: none; 
+    padding: 20px;
+        height: auto;
+        min-height: 0;
+    }
+    #background_block_1{
+    position: inherit;
+    padding: 18px 20px;
+    width: calc(100% - 40px);
+}
+    #background_block_1 h1{
+    font-size: 23px;
+}
+    #background{
+    width: auto;
+    height: auto;
+}
+    #catalog ul li{
+    width: calc(100% - 60px);
+    height: auto;
+}
+    #img{
+    width: 100%;
+    height: auto;
+}  
+    .box_pic{
+    height: auto;
+    }
+    #catalog h1{
+    font-size: 27px;
+    text-align: center;
+    margin-left: 0;
+    }
+    #catalog p{  
+    text-align: center;
+    margin: 10px; 
+    }
+    #shipping_and_payment ul li:nth-child(1),#shipping_and_payment ul li:nth-child(2),#shipping_and_payment ul li:nth-child(3){
+        width:calc(100% - 40px);
+        padding: 20px 20px 40px 20px;
+    }
+    .map iframe{
+	width:100%;
+	height:200px;
+	}
+    footer{
+	padding-top:40px;	
+	}
+	footer div{
+	width:100%;
+	margin-bottom:10px;
+	}
+}
+@media (min-width:740px ) and (max-width: 940px) {
+    #we_offer ul {
+        margin-left: 2px;
+    }
+    #we_offer ul li{
+       width: calc(50% - 30px);
+       margin-left: 0px; 
+    }
+    #main,#we_offer{
+    padding: 20px;
+    }
+    #main h1, #we_offer h1{
+        font-size: 27px;
+    }
+    #by_tovar{
+        display: none;
+    }
+    .hidden_by_tovar{
+    display: inline;
+    }
+    #menu_section{
+    padding: 0;
+    }
+    #menu_section p span{
+    display: none;
+    }
+    #about_us_and_garant div, #about_us_and_garant .garant{
+    width: calc(100% - 40px);
+    border-right: none; 
+    padding: 20px;
+        height: auto;
+        min-height: 0;
+    }
+    #background_block_1{
+    position: inherit;
+    width: calc(100% - 40px);
+    padding: 20px;
+}
+    #background_block_1 h1{
+    font-size: 27px;
+}
+    #background{
+    width: auto;
+    height: auto;
+}
+    #catalog ul li{
+    width: calc(50% - 60px);
+    height: auto;
+}
+    #img{
+    width: 100%;
+    height: auto;
+}  
+    .box_pic{
+    height: auto;
+    }
+    #catalog h1{
+    font-size: 27px;
+    text-align: center;
+    margin-left: 0;
+    }
+    #catalog p{  
+    text-align: center;
+    margin: 10px; 
+    }
+    #shipping_and_payment ul li:nth-child(1),#shipping_and_payment ul li:nth-child(2),#shipping_and_payment ul li:nth-child(3){
+    width:calc(100% - 40px);
+    padding: 20px 20px 40px 20px;
+    }
+    .map iframe{
+	width:100%;
+	height:300px;
+	}
+    footer{
+	padding-top:40px;	
+	}
+	footer div{
+	width:100%;
+	margin-bottom:10px;
+	}
+}
+@media (min-width:1500px ) and (max-width: 10000px) {
+    #body_backg{
+    width: 1366px;
+    height: auto;
+    margin: auto;
+    }
+}
+@media handheld and (max-width: 1280px) {
+   #we_offer ul li{
+       width: calc(100% - 30px);
+       margin-left: 2px; 
+    }
+    #main,#we_offer{
+    padding: 20px;
+    }
+    #main h1, #we_offer h1{
+        font-size: 27px;
+    }
+    #by_tovar{
+        display: none;
+    }
+    .hidden_by_tovar{
+    display: inline;
+    }
+    #menu_section{
+    padding: 0;
+    }
+    #menu_section p span{
+    display: none;
+    }
+    #about_us_and_garant div, #about_us_and_garant .garant{
+    width: calc(100% - 40px);
+    border-right: none; 
+    padding: 20px;
+        height: auto;
+        min-height: 0;
+    }
+    #background_block_1{
+    position: inherit;
+    padding: 18px 20px;
+    width: calc(100% - 40px);
+}
+    #background_block_1 h1{
+    font-size: 23px;
+}
+    #background{
+    width: auto;
+    height: auto;
+}
+    #catalog ul li{
+    width: calc(100% - 60px);
+    height: auto;
+}
+    #img{
+    width: 100%;
+    height: auto;
+}  
+    .box_pic{
+    height: auto;
+    }
+    #catalog h1{
+    font-size: 27px;
+    text-align: center;
+    margin-left: 0;
+    }
+    #catalog p{  
+    text-align: center;
+    margin: 10px; 
+    }
+    #shipping_and_payment ul li:nth-child(1),#shipping_and_payment ul li:nth-child(2),#shipping_and_payment ul li:nth-child(3){
+        width:calc(100% - 40px);
+        padding: 20px 20px 40px 20px;
+    }
+    .map iframe{
+	width:100%;
+	height:200px;
+	}
+    footer{
+	padding-top:40px;	
+	}
+	footer div{
+	width:100%;
+	margin-bottom:10px;
+	}
+}
+    
